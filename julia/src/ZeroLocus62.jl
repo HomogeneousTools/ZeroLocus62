@@ -8,14 +8,12 @@ alphabet `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`.
 """
 module ZeroLocus62
 
-using Base62: BASE62_ALPHABET
-
 export Factor,
     LOCUS_SEP, canonicalize, decode_label, encode_label, is_canonical, marked_nodes
 
 const STANDARD_NAME = "ZeroLocus62"
-const BASE62_CHARS = Char.(BASE62_ALPHABET)
-const BASE62 = String(BASE62_CHARS)
+const BASE62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+const BASE62_CHARS = collect(BASE62)
 const BASE62_INDEX =
     Dict(character => value - 1 for (value, character) in enumerate(BASE62_CHARS))
 

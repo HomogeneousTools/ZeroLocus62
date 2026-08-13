@@ -3,11 +3,7 @@ uuid = "f62862d0-cf9d-4d05-9b2d-cd2c169505b1"
 version = "3.1.1"
 authors = ["Pieter Belmans <pieterbelmans@gmail.com>"]
 
-[deps]
-Base62 = "212a889c-07c6-4e8f-8766-fb0aa2ea40c2"
-
 [compat]
-Base62 = "1.0.0"
 JSON = "0.21"
 julia = "1.9"
 
