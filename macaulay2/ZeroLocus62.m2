@@ -2,8 +2,8 @@
 
 newPackage(
     "ZeroLocus62",
-    Version => "3.1.1",
-    Date => "April 24, 2026",
+    Version => "3.1.2",
+    Date => "August 13, 2026",
     Authors => {
         {Name => "Pieter Belmans", Email => "pieterbelmans@gmail.com"}},
     Headline => "ZeroLocus62 label codec for flag-variety bundles",

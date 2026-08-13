@@ -1,6 +1,6 @@
 """ZeroLocus62 v3.1 canonical label codec for bundles, zero loci, and degeneracy loci.
 
-This module is the reference Python implementation for the ZeroLocus62 v3.1.1
+This module is the reference Python implementation for the ZeroLocus62 v3.1.2
 release of the v3.1 specification.
 
 ZeroLocus62 uses the 62-character lexicographic alphabet

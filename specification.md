@@ -1,8 +1,8 @@
-# ZeroLocus62 format specification v3.1.1
+# ZeroLocus62 format specification v3.1.2
 
 ## Status
 
-This document defines Specification Version 3.1.1 of ZeroLocus62. The wire format and canonicalization rule remain the v3.1 format for zero loci and degeneracy loci of completely reducible vector bundles on partial flag varieties; v3.1.1 clarifies exact implementation requirements for that rule. It is intended to be read as an RFC-like specification for the wire format and canonicalization rules.
+This document defines Specification Version 3.1.2 of ZeroLocus62. The wire format and canonicalization rule remain the v3.1 format for zero loci and degeneracy loci of completely reducible vector bundles on partial flag varieties; v3.1.1 clarified exact implementation requirements for that rule, and v3.1.2 changes no normative text. It is intended to be read as an RFC-like specification for the wire format and canonicalization rules.
 
 ## 1. Conventions
 
@@ -591,3 +591,4 @@ The examples
 - **v3** — Replaced the old dense/base-descriptor bundle-row encoding by the sparse row codec of §8. The ambient encoding, label syntax, and graph-certificate canonicalization are unchanged, but bundle rows now optimize for sparse supports with small positive values.
 - **v3.1** — Replaced the graph-certificate canonicalization by the coefficient-row multiset rule of §6. Equal ambient factors are disambiguated by lexicographically minimizing sorted flattened coefficient rows, and summands are emitted in coefficient-vector order rather than encoded-row-string order.
 - **v3.1.1** — Clarified exact implementation requirements for the v3.1 canonicalization rule. In particular, the specification now records the exact one-summand fast path, forbids unsafe prefix-only pruning for multiple summands, and documents the dynamic-programming strategy used by the reference implementations. The wire format and normative v3.1 canonical rule are unchanged.
+- **v3.1.2**: Packaging-only release. The Julia reference implementation no longer depends on Base62.jl and defines the alphabet of §4 directly, matching the Python and Macaulay2 implementations. No normative text changed.
