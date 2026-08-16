@@ -6,7 +6,13 @@ The repository-level overview is in [../README.md](../README.md), and the canoni
 
 ## Install
 
-Develop the local package from the repository root:
+The package is registered in the Julia General registry:
+
+```text
+julia -e 'using Pkg; Pkg.add("ZeroLocus62")'
+```
+
+To work on the implementation in this repository instead, develop the local package from the repository root:
 
 ```text
 julia -e 'using Pkg; Pkg.develop(path="julia")'

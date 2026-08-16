@@ -62,7 +62,13 @@ assert decode_label(label)["summands"] == [[[1]]]
 
 ## Julia
 
-From Julia, develop the local package and run the tests:
+Install the registered package from the Julia General registry:
+
+```text
+julia -e 'using Pkg; Pkg.add("ZeroLocus62")'
+```
+
+Run the Julia tests against the copy in this repository:
 
 ```text
 julia --project=julia -e 'using Pkg; Pkg.test()'
